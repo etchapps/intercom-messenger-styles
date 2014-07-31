@@ -1,0 +1,182 @@
+.intercom-btn-success, #IModal.intercom #IntercomNewMessageContainer form button#message_commit, #IModal.intercom #IntercomNewMessageContainer form button#comment_commit,
+#IModal.intercom #IntercomNewMessageContainer div.form button#message_commit,
+#IModal.intercom #IntercomNewMessageContainer div.form button#comment_commit,
+#IModal.intercom #IntercomMessageViewContainer form button#message_commit,
+#IModal.intercom #IntercomMessageViewContainer form button#comment_commit,
+#IModal.intercom #IntercomMessageViewContainer div.form button#message_commit,
+#IModal.intercom #IntercomMessageViewContainer div.form button#comment_commit {
+  bottom: 0 !important;
+  float: right !important;
+  margin: 1.25em 1em 0 !important;
+  padding: 0.5em 1em !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  font-weight: bold !important; }
+  .intercom-btn-success span, #IModal.intercom #IntercomNewMessageContainer form button#message_commit span, #IModal.intercom #IntercomNewMessageContainer form button#comment_commit span,
+  #IModal.intercom #IntercomNewMessageContainer div.form button#message_commit span,
+  #IModal.intercom #IntercomNewMessageContainer div.form button#comment_commit span,
+  #IModal.intercom #IntercomMessageViewContainer form button#message_commit span,
+  #IModal.intercom #IntercomMessageViewContainer form button#comment_commit span,
+  #IModal.intercom #IntercomMessageViewContainer div.form button#message_commit span,
+  #IModal.intercom #IntercomMessageViewContainer div.form button#comment_commit span {
+    background: none !important;
+    border-top: 0 !important;
+    text-indent: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    font-weight: bold !important;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25) !important; }
+
+#IModal div, #IModal span, #IModal applet, #IModal object, #IModal iframe, #IModal h1, #IModal h2, #IModal h3, #IModal h4, #IModal h5, #IModal h6, #IModal p, #IModal blockquote, #IModal pre, #IModal a, #IModal abbr, #IModal acronym, #IModal address, #IModal big, #IModal cite, #IModal code, #IModal del, #IModal dfn, #IModal em, #IModal img, #IModal ins, #IModal kbd, #IModal q, #IModal s, #IModal samp, #IModal small, #IModal strike, #IModal strong, #IModal sub, #IModal sup, #IModal tt, #IModal var, #IModal b, #IModal u, #IModal i, #IModal center, #IModal dl, #IModal dt, #IModal dd, #IModal ol, #IModal ul, #IModal li, #IModal fieldset, #IModal form, #IModal div.form, #IModal label, #IModal legend, #IModal table, #IModal caption, #IModal tbody, #IModal tfoot, #IModal thead, #IModal tr, #IModal th, #IModal td, #IModal article, #IModal aside, #IModal canvas, #IModal details, #IModal figcaption, #IModal figure, #IModal #IModal footer, #IModal header, #IModal hgroup, #IModal menu, #IModal nav, #IModal section, #IModal summary, #IModal time, #IModal mark, #IModal audio, #IModal video, #IModal button, #IModal textarea, #IModal input, #IModal, #IModalOverlay, #INotificationMessagesWrapper, #INotificationMessagesWrapper div, #INotificationMessagesWrapper h1, #INotificationMessagesWrapper h4, #INotificationMessagesWrapper p, #INotificationMessagesWrapper a, #INotificationMessagesWrapper form, #INotificationMessagesWrapper div.form {
+  font-family: sans-serif !important; }
+
+#INotificationMessagesWrapper {
+  overflow-y: auto !important; }
+
+#IModalOverlay {
+  background: white !important;
+  transition: opacity 0.15s linear 0s !important; }
+  #IModalOverlay.ic_visible {
+    opacity: 0.5 !important; }
+
+#IModal {
+  border: 1px solid #cccccc !important;
+  border-radius: 0.25em !important;
+  box-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.1) !important; }
+
+#INotificationMessagesWrapper .ic_avatar_wrapper,
+#IModal .ic_header {
+  background-color: white !important;
+  background-image: none !important;
+  background: white !important;
+  color: #555555 !important; }
+
+#IModal .ic_table_wrapper,
+#IModal #IntercomMessageView,
+#IModal #IntercomNewMessageContainer .ic_form_wrapper {
+  background: white !important; }
+
+#IModal > div.ic_content div.ic_header {
+  border-bottom: 0 none !important;
+  box-shadow: 0 none !important;
+  padding: 0.5em 1em;
+  box-shadow: none !important;
+  height: 60px !important; }
+  #IModal > div.ic_content div.ic_header > h1 {
+    left: 1em !important;
+    font-size: 1.25em !important;
+    width: 140px !important;
+    max-width: 140px !important;
+    top: 22px !important;
+    height: 42px !important;
+    line-height: 40px !important;
+    overflow: hidden !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    white-space: normal !important;
+    text-overflow: inherit !important; }
+  #IModal > div.ic_content div.ic_header > a {
+    padding: 1em !important;
+    top: 1em !important; }
+  #IModal > div.ic_content div.ic_header .ic_back,
+  #IModal > div.ic_content div.ic_header .ic_new_message {
+    right: 4em !important; }
+  #IModal > div.ic_content div.ic_header .ic_close_modal {
+    padding: 1em !important; }
+
+#IModal.intercom div.powered_by_intercom,
+#INotificationMessagesWrapper div.ic_notification_message div.powered_by_intercom {
+  display: none !important; }
+
+#IModal #IntercomMessageView .ic_messages_wrapper {
+  border-top: 1px solid #ededed !important;
+  background: #eeeeee !important;
+  border-bottom: 0 none !important;
+  padding: 0.5em 1em; }
+
+@media (min-width: 599px) {
+  #IModal.intercom #IntercomMessageViewContainer .ic_messages_wrapper {
+    height: 190px !important; } }
+
+#IModal #IntercomMessageListView div.ic_table_wrapper {
+  height: 360px !important;
+  border-top: 1px solid #ededed !important;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px; }
+  #IModal #IntercomMessageListView div.ic_table_wrapper table > tbody tr:hover th,
+  #IModal #IntercomMessageListView div.ic_table_wrapper table > tbody tr:hover td {
+    background: #f3f3f3 !important; }
+  #IModal #IntercomMessageListView div.ic_table_wrapper .ic_from {
+    color: #cccccc !important; }
+  #IModal #IntercomMessageListView div.ic_table_wrapper .ic_message_summary {
+    color: #555555 !important; }
+  #IModal #IntercomMessageListView div.ic_table_wrapper .ic_time {
+    font-size: 12px !important; }
+
+#IModal #IntercomMessageViewContainer .ic_messages_wrapper,
+#IModal.ic_ie7 #IntercomMessageViewContainer .ic_messages_wrapper {
+  background-color: #eeeeee;
+  border-bottom: 0 none !important; }
+  #IModal #IntercomMessageViewContainer .ic_messages_wrapper > ul.ic_comments > li.ic_user_response > blockquote,
+  #IModal #IntercomMessageViewContainer .ic_messages_wrapper ul.ic_comments li.ic_user_response blockquote.ic_comment_body,
+  #IModal.ic_ie7 #IntercomMessageViewContainer .ic_messages_wrapper > ul.ic_comments > li.ic_user_response > blockquote,
+  #IModal.ic_ie7 #IntercomMessageViewContainer .ic_messages_wrapper ul.ic_comments li.ic_user_response blockquote.ic_comment_body {
+    border-color: #dddddd !important; }
+  #IModal #IntercomMessageViewContainer .ic_messages_wrapper > ul.ic_comments > li div.ic_user:after,
+  #IModal.ic_ie7 #IntercomMessageViewContainer .ic_messages_wrapper > ul.ic_comments > li div.ic_user:after {
+    border-top-color: #dddddd !important; }
+  #IModal #IntercomMessageViewContainer .ic_messages_wrapper > ul.ic_comments > li div.ic_user:before,
+  #IModal.ic_ie7 #IntercomMessageViewContainer .ic_messages_wrapper > ul.ic_comments > li div.ic_user:before {
+    border-top-color: white !important; }
+
+#IModal > div.ic_content > #IntercomNewMessageContainer > div.ic_form_wrapper > form > strong.ic_attachment_chooser.ic_chooser_enabled,
+#IModal > div.ic_content > #IntercomNewMessageContainer > div.ic_form_wrapper > div.form > strong.ic_attachment_chooser.ic_chooser_enabled,
+#IModal > div.ic_content > #IntercomMessageViewContainer > #IntercomMessageView#IntercomMessageView > form > strong.ic_attachment_chooser.ic_chooser_enabled,
+#IModal > div.ic_content > #IntercomMessageViewContainer > #IntercomMessageView#IntercomMessageView > div.form > strong.ic_attachment_chooser.ic_chooser_enabled {
+  top: 1.5em !important;
+  right: 2em !important; }
+
+#IModal.intercom #IntercomNewMessageContainer form,
+#IModal.intercom #IntercomNewMessageContainer div.form,
+#IModal.intercom #IntercomMessageViewContainer form,
+#IModal.intercom #IntercomMessageViewContainer div.form {
+  padding: 0; }
+#IModal.intercom #IntercomNewMessageContainer .ic_reply_sent .ic_messages_wrapper,
+#IModal.intercom #IntercomMessageViewContainer .ic_reply_sent .ic_messages_wrapper {
+  height: 351px !important;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px; }
+#IModal.intercom #IntercomNewMessageContainer div.ic_message_container,
+#IModal.intercom #IntercomMessageViewContainer div.ic_message_container {
+  border-radius: 0 !important;
+  border: 0 none !important;
+  border-top: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  font-size: 1em !important; }
+  #IModal.intercom #IntercomNewMessageContainer div.ic_message_container #newMessageBody,
+  #IModal.intercom #IntercomMessageViewContainer div.ic_message_container #newMessageBody {
+    height: 285px !important; }
+#IModal.intercom #IntercomNewMessageContainer > div.ic_form_wrapper form,
+#IModal.intercom #IntercomMessageViewContainer > div.ic_form_wrapper form {
+  padding: 0 !important;
+  background: white !important; }
+#IModal.intercom #IntercomNewMessageContainer form textarea,
+#IModal.intercom #IntercomNewMessageContainer div.form textarea,
+#IModal.intercom #IntercomMessageViewContainer form textarea,
+#IModal.intercom #IntercomMessageViewContainer div.form textarea {
+  border: 0 none !important;
+  border-top: 1px solid #dddddd !important;
+  border-bottom: 1px solid #dddddd !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 1em !important;
+  padding: 1em !important;
+  padding-right: 3em; }
+  #IModal.intercom #IntercomNewMessageContainer form textarea#comment_body,
+  #IModal.intercom #IntercomNewMessageContainer div.form textarea#comment_body,
+  #IModal.intercom #IntercomMessageViewContainer form textarea#comment_body,
+  #IModal.intercom #IntercomMessageViewContainer div.form textarea#comment_body {
+    border-top: 0; }

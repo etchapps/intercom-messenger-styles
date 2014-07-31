@@ -1,0 +1,316 @@
+//
+// Intercom in-app messenger styles
+// --------------------------------------------------
+// madebyetch.com
+
+
+// Contents
+// --------
+// - Variables
+// - Placeholders
+// - Core styles
+// - New Message view
+// - Conversation view
+
+
+//
+// Variables
+// --------------------------------------------------
+
+$im-font-family:        sans-serif;
+$im-text-color:         #555;
+$im-border-color:       #ccc;
+$im-border-radius:      0.25em;
+                        
+$im-padding-h:          1em;
+$im-padding-v:          .5em;
+
+$im-btn-bg:             #666;
+$im-btn-color:          #fff;
+$im-btn-border-color:   #666;
+
+$gray-light:            #ccc;
+$gray-lighter:          #eee;
+
+$screen-xs-min:         599px;
+
+
+
+//
+// Placeholders
+// --------------------------------------------------
+
+.intercom-btn-success {
+  bottom: 0!important;
+  float: right!important;
+  margin: 1.25em $im-padding-h 0!important;
+  padding: $im-padding-v $im-padding-h!important;
+  position: static!important;
+  width: auto!important;
+  height: auto!important;
+  font-weight: bold!important;
+
+  span {
+    background:none!important;
+    border-top: 0!important;
+    text-indent: 0!important;
+    width: auto!important;
+    height: auto!important;
+    font-weight: bold!important;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25)!important;
+  }
+}
+
+
+//
+// Core styles
+// --------------------------------------------------
+
+// Modal Base
+
+#IModal div, #IModal span, #IModal applet, #IModal object, #IModal iframe, #IModal h1, #IModal h2, #IModal h3, #IModal h4, #IModal h5, #IModal h6, #IModal p, #IModal blockquote, #IModal pre, #IModal a, #IModal abbr, #IModal acronym, #IModal address, #IModal big, #IModal cite, #IModal code, #IModal del, #IModal dfn, #IModal em, #IModal img, #IModal ins, #IModal kbd, #IModal q, #IModal s, #IModal samp, #IModal small, #IModal strike, #IModal strong, #IModal sub, #IModal sup, #IModal tt, #IModal var, #IModal b, #IModal u, #IModal i, #IModal center, #IModal dl, #IModal dt, #IModal dd, #IModal ol, #IModal ul, #IModal li, #IModal fieldset, #IModal form, #IModal div.form, #IModal label, #IModal legend, #IModal table, #IModal caption, #IModal tbody, #IModal tfoot, #IModal thead, #IModal tr, #IModal th, #IModal td, #IModal article, #IModal aside, #IModal canvas, #IModal details, #IModal figcaption, #IModal figure, #IModal #IModal footer, #IModal header, #IModal hgroup, #IModal menu, #IModal nav, #IModal section, #IModal summary, #IModal time, #IModal mark, #IModal audio, #IModal video, #IModal button, #IModal textarea, #IModal input, #IModal, #IModalOverlay, #INotificationMessagesWrapper, #INotificationMessagesWrapper div, #INotificationMessagesWrapper h1, #INotificationMessagesWrapper h4, #INotificationMessagesWrapper p, #INotificationMessagesWrapper a, #INotificationMessagesWrapper form, #INotificationMessagesWrapper div.form {
+  font-family: $im-font-family!important;
+}
+
+
+// Modal Body
+
+#INotificationMessagesWrapper {
+  overflow-y: auto !important; // Fixes scrollbar on small screen windows
+}
+
+// Modal Overlay
+
+#IModalOverlay {
+  background: #fff!important;
+  transition:opacity 0.15s linear 0s!important;
+
+  &.ic_visible {
+    opacity: 0.5!important;
+  }
+}
+
+// Modal Body
+
+#IModal {
+  border: 1px solid #ccc!important;
+  border-radius: $im-border-radius !important;
+  box-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.1)!important;
+}
+
+//
+// Modal Content
+//
+
+#INotificationMessagesWrapper .ic_avatar_wrapper,
+#IModal .ic_header {
+  background-color: #fff!important;
+  background-image: none!important;
+  background: #fff!important;
+  color: $im-text-color!important;
+}
+
+#IModal .ic_table_wrapper,
+#IModal #IntercomMessageView,
+#IModal #IntercomNewMessageContainer .ic_form_wrapper {
+  background: #fff!important;
+}
+
+// Modal Header
+
+#IModal > div.ic_content div.ic_header {
+  border-bottom: 0 none!important;
+  box-shadow: 0 none!important;
+  padding: $im-padding-v $im-padding-h;
+  box-shadow: none!important;
+  height:60px!important;
+
+  > h1 {
+    left: $im-padding-h!important;
+    font-size: 1.25em!important;
+    width: 140px!important;
+    max-width: 140px!important;
+    top:22px!important;
+    height: 42px!important;
+    line-height: 40px!important;
+    overflow: hidden!important;
+    text-align: left!important;
+    font-weight: bold!important;
+    white-space: normal!important;
+    text-overflow: inherit!important;
+  }
+
+  > a {
+    padding: 1em!important;
+    top:1em!important;
+  }
+
+  .ic_back,
+  .ic_new_message {
+    right:4em!important;
+  }
+
+  .ic_close_modal {
+    padding: 1em!important;
+  }
+}
+
+// Badge - Powered by Intercom
+#IModal.intercom div.powered_by_intercom,
+#INotificationMessagesWrapper div.ic_notification_message div.powered_by_intercom {
+  display: none!important;
+}
+
+
+//
+// Conversations View
+// --------------------------------------------------
+
+#IModal #IntercomMessageView .ic_messages_wrapper {
+  border-top:1px solid #ededed!important;
+  background: $gray-lighter!important;
+  border-bottom: 0 none!important;
+  padding:$im-padding-v $im-padding-h;
+}
+
+#IModal.intercom #IntercomMessageViewContainer .ic_messages_wrapper {
+  @media (min-width: $screen-xs-min) {
+    height: 190px!important;
+  }
+}
+
+#IModal #IntercomMessageListView div.ic_table_wrapper {
+  height: 360px!important;
+  border-top:1px solid #ededed!important;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+  table > tbody tr:hover {
+    th,
+    td {
+      background: lighten($gray-lighter,2%)!important;
+    }
+  }
+
+  .ic_from {
+    color: $gray-light!important;
+  }
+
+  .ic_message_summary {
+    color:$im-text-color!important;
+  }
+
+  .ic_time {
+    font-size: 12px!important;
+  }
+}
+
+//
+// New Message view
+// --------------------------------------------------
+
+#IModal #IntercomMessageViewContainer .ic_messages_wrapper,
+#IModal.ic_ie7 #IntercomMessageViewContainer .ic_messages_wrapper {
+  background-color: $gray-lighter;
+  border-bottom:0 none!important;
+
+  // Highlight user commments
+  > ul.ic_comments > li.ic_user_response > blockquote,
+  ul.ic_comments li.ic_user_response blockquote.ic_comment_body {
+    border-color: #ddd!important;
+
+    > ul.ic_comments > li div.ic_user:before {
+
+    }
+  }
+
+  > ul.ic_comments > li div.ic_user {
+
+    &:after {
+      border-top-color:#ddd!important;
+    }
+
+    &:before {
+      border-top-color: #fff!important;
+    }
+  }
+}
+
+// Attachtment Trigger
+#IModal > div.ic_content > #IntercomNewMessageContainer > div.ic_form_wrapper > form > strong.ic_attachment_chooser.ic_chooser_enabled,
+#IModal > div.ic_content > #IntercomNewMessageContainer > div.ic_form_wrapper > div.form > strong.ic_attachment_chooser.ic_chooser_enabled,
+#IModal > div.ic_content > #IntercomMessageViewContainer > #IntercomMessageView#IntercomMessageView > form > strong.ic_attachment_chooser.ic_chooser_enabled,
+#IModal > div.ic_content > #IntercomMessageViewContainer > #IntercomMessageView#IntercomMessageView > div.form > strong.ic_attachment_chooser.ic_chooser_enabled {
+  top: 1.5em!important;
+  right: 2em!important;
+}
+
+
+#IModal.intercom #IntercomNewMessageContainer,
+#IModal.intercom #IntercomMessageViewContainer {
+
+  form,
+  div.form {
+    padding:0;
+  }
+
+  // Container
+  .ic_reply_sent .ic_messages_wrapper {
+    height: 351px!important;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  div.ic_message_container {
+    border-radius: 0!important;
+    border: 0 none!important;
+    border-top: 0!important;
+    width: 100%!important;
+    height: auto!important;
+    font-size: 1em!important;
+
+    #newMessageBody {
+      height: 285px!important;
+    }
+  }
+
+  // Message form
+  > div.ic_form_wrapper {
+
+    form {
+      padding: 0!important;
+      background: #fff!important;
+    }
+
+  }
+
+  // Buttons - Green
+  form button,
+  div.form button {
+
+    &#message_commit,
+    &#comment_commit {
+      @extend .intercom-btn-success;
+    }
+  }
+
+  // Textarea - yellow like note
+
+  form textarea,
+  div.form textarea {
+    border:0 none!important;
+    border-top: 1px solid #ddd!important;
+    border-bottom: 1px solid #ddd!important;
+    width: 100%!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+    font-size: 1em!important;
+    padding: $im-padding-h!important;
+    padding-right: $im-padding-h*3;
+
+    &#comment_body {
+      border-top: 0;
+    }
+  }
+
+}
